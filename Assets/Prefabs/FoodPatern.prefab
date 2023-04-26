@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: -4987163128873660669}
   - component: {fileID: -9025653817269851163}
   - component: {fileID: -1033987653627130283}
+  - component: {fileID: -6840915882199960243}
+  - component: {fileID: -5044364652197937998}
   m_Layer: 0
   m_Name: FoodPatern
   m_TagString: Food
@@ -125,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d66efe1eaf31c204e8d5eebb46adede9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 25
 --- !u!65 &-1033987653627130283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -147,3 +149,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5964484, y: 0.18282157, z: 0.8071493}
   m_Center: {x: 0.005591497, y: 0.00030873716, z: 0.055986047}
+--- !u!114 &-6840915882199960243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3050459345435945936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088e589892b9ca74f8b16747cc1a2e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillAmount: 2
+  quantity: 0
+--- !u!114 &-5044364652197937998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3050459345435945936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c80b246e6364e4db507ab24418f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

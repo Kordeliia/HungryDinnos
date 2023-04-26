@@ -363,6 +363,7 @@
 "Assets/_Scripts/FollowPlayer.cs"
 "Assets/_Scripts/FoodStats.cs"
 "Assets/_Scripts/GameManager.cs"
+"Assets/_Scripts/HungerBar.cs"
 "Assets/_Scripts/PlayerController.cs"
 "Assets/_Scripts/ThrowObject.cs"
 -langversion:9.0

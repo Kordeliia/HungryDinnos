@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class FeedSystemController : MonoBehaviour
 {
-    public DinoStats dinoStats;
-    public FoodStats foodStats;
+    private DinoStats dinoStats;
+    private FoodStats foodStats;
+    private HungerBar hungerBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,9 @@ public class FeedSystemController : MonoBehaviour
     public void FeedDino(GameObject food, GameObject dino)
     {
         dinoStats = dino.GetComponent<DinoStats>();
-        foodStats = dino.GetComponent<FoodStats>();
+        foodStats = food.GetComponent<FoodStats>();
+        hungerBar = dino.GetComponent <HungerBar>();
         dinoStats.hungerAmount += foodStats.fillAmount;
+        hungerBar.UpdateHungryBar(dinoStats.hungerAmount, dinoStats.maxHungerAmount);
     }
 }

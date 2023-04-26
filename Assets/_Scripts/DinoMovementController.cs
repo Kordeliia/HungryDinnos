@@ -33,7 +33,6 @@ public class DinoMovementController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Food"))
         {
-            Debug.Log("Entramos en la colisión con" + other.gameObject.name);
             animator.SetBool(EatAnimatorName(gameObject), true);
             isMoving = false;
         }

@@ -18,8 +18,9 @@ public class ThrowObject : MonoBehaviour
     {
         isMoving = true;
         timer = 0;
-        Debug.Log(timer);
         rb = GetComponent<Rigidbody>();
+        feedSystemController = GetComponent<FeedSystemController>();
+        
     }
 
     // Update is called once per frame
@@ -41,12 +42,11 @@ public class ThrowObject : MonoBehaviour
         { 
             isMoving = false;
             //rb.transform.position = new Vector3(rb.transform.position.x, 0, rb.transform.position.y);
-            Debug.Log("Colision con " +other.gameObject.name); 
         }
 
         if (other.gameObject.CompareTag("Dino"))
         {
-            Debug.Log("Colision con " + other.gameObject.name);
+            Debug.Log(gameObject +" Colision con " + other.gameObject.name);
             dino = other.gameObject.GetComponent<DinoMovementController>();
             timer = 3f;
             feedSystemController.FeedDino(gameObject, other.gameObject);
